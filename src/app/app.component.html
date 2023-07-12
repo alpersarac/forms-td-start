@@ -23,8 +23,10 @@
             ngModel
             name="email"
             required
-            email>
+            email
+            #email="ngModel">
           </div>
+          <span *ngIf="!email.valid && email.touched" class="help-block">Please enter a valid email</span>
         </div>
         <div class="form-group">
           <label for="secret">Secret Questions</label>
