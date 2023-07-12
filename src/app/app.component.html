@@ -37,7 +37,10 @@
             <option value="teacher">Your first teacher?</option>
           </select>
         </div>
-        <button class="btn btn-primary" type="submit">Submit</button>
+        <button
+        class="btn btn-primary"
+        type="submit"
+        [disabled]="!f.valid">Submit</button>
       </form>
     </div>
   </div>
